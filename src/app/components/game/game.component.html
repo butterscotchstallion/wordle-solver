@@ -1,0 +1,9 @@
+<table class="wordle-table">
+    <tr *ngFor="let row of gameData; let rowIdx = index">
+        <td *ngFor="let letterCell of row; let letterIdx = index;">
+            <input  type="text"
+                    class="wordle-letter"
+                    id="letter-{{rowIdx}}-{{letterIdx}}">
+        </td>
+    </tr>
+</table>
